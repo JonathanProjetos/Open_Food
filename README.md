@@ -104,7 +104,7 @@ $ npm run start:dev
           "per100g": string
           "perServing": string  
         }
-        //.............
+        //............. Ponto variável em função do tipo de alimento.
       }
       "nova": {
         "score": number
