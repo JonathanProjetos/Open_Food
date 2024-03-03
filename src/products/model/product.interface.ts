@@ -1,20 +1,18 @@
-type Nutrition = {
-  score: {
-    score: string;
-    title: string;
-  };
+type score = {
+  score: string;
+  title: string;
 };
 
-interface Nova {
+type nova = {
   score: number;
   title: string;
-}
+};
 
 export interface Product {
   id: string;
   name: string;
-  nutrition: Nutrition;
-  nova: Nova;
+  nutrition: score;
+  nova: nova;
 }
 
 interface Ingredientes {
@@ -41,5 +39,5 @@ export interface ProductDetail {
   quantity: string;
   ingredients: Ingredientes;
   nutrition: ValorNutricional;
-  nova: Nova;
+  nova: nova;
 }
