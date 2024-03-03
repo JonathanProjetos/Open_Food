@@ -5,7 +5,7 @@ import query from './utils/query';
 
 @Injectable()
 export class ProductsService {
-  async getProducts(nutrition: any, nova: any): Promise<Product[]> {
+  async getProducts(nutrition: string, nova: string): Promise<Product[]> {
     // ------- Iniciando o browser -------
     const browser = await puppeteer.launch({ headless: true });
 
@@ -94,25 +94,32 @@ export class ProductsService {
     // ------- Filtrando a lista de produtos -------
 
     if (!nutrition || !nova) {
-      return listObjectProducts;
+      return listObjectProducts as unknown as Product[];
     } else {
       const filterListProductsForParams = listObjectProducts.filter(
-        (p) => p.nutrition.score === nutrition && p.nova.score === nova,
+        (p) =>
+          p?.nutrition?.score === nutrition.toLocaleUpperCase() &&
+          p?.nova?.score === Number(nova),
       );
       console.log(filterListProductsForParams);
-      return filterListProductsForParams;
+      return filterListProductsForParams as unknown as Product[];
     }
   }
 
   async getProductById(id: any): Promise<ProductDetail> {
     // ------- Iniciando o browser -------
     const browser = await puppeteer.launch({
-      headless: true,
+      headless: false,
       args: ['--lang=pt-BR'],
     });
 
     // ------- Abrindo uma nova página -------
     const page = await browser.newPage();
+
+    await page.setGeolocation({
+      latitude: -19.923429450773696,
+      longitude: -44.11088611169947,
+    });
 
     // ------- Acessando a página -------
     await page.goto('https://br.openfoodfacts.org/');
