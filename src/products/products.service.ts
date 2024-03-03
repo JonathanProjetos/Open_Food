@@ -81,6 +81,8 @@ export class ProductsService {
 
       count++;
 
+      // ----------------- Limitando a quantidade de produtos -----------------
+
       if (count === 20) {
         console.log('Limite de 20 produtos atingido');
         break;
@@ -92,7 +94,6 @@ export class ProductsService {
     // ------- Filtrando a lista de produtos -------
 
     if (!nutrition || !nova) {
-      console.log(listObjectProducts);
       return listObjectProducts;
     } else {
       const filterListProductsForParams = listObjectProducts.filter(
@@ -104,12 +105,16 @@ export class ProductsService {
   }
 
   async getProductById(id: any): Promise<ProductDetail> {
+    // ------- Iniciando o browser -------
     const browser = await puppeteer.launch({
       headless: true,
       args: ['--lang=pt-BR'],
     });
 
+    // ------- Abrindo uma nova página -------
     const page = await browser.newPage();
+
+    // ------- Acessando a página -------
     await page.goto('https://br.openfoodfacts.org/');
 
     // ------- Esperando o elemento da página -------
