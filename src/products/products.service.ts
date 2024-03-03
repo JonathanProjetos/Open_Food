@@ -116,11 +116,6 @@ export class ProductsService {
     // ------- Abrindo uma nova página -------
     const page = await browser.newPage();
 
-    await page.setGeolocation({
-      latitude: -19.923429450773696,
-      longitude: -44.11088611169947,
-    });
-
     // ------- Acessando a página -------
     await page.goto('https://br.openfoodfacts.org/');
 
