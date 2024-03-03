@@ -47,6 +47,8 @@ $ npm run start:dev
 - O O endpoint __GET:id__ espera receber um ID vinculado aos primeiros 20 produtos na página inicial.
 
 ## Desafios
-- A raspagem de dados no website OpenFood tornou-se bastante desafiadora para mim. A falta de uniformidade na estrutura, layout e práticas de codificação desses sites complicou muito o processo de extração de dados. Uma das dificuldades que enfrentei é lidar com a estrutura variável dos sites de cada produto, já que as páginas têm diferentes estruturas HTML. 
+- A raspagem de dados no website OpenFood tornou-se uma tarefa desafiadora para mim. A falta de uniformidade na estrutura, layout e práticas de codificação desses sites complicou significativamente o processo de extração de dados. Uma das dificuldades que enfrento é lidar com a estrutura variável das páginas de cada produto, uma vez que estas apresentam diferentes formatos de HTML.
 
-- Percebi que o Puppeteer estava levando bastante tempo para o processo de raspagem. Seja pela falta de experiência usando a biblioteca ou pela limitação dela, o tempo levado pelo processo de raspagem me fez limitar a fonte de dados para ter uma experiência mais rápida. A aplicação foi desenvolvida para raspar os 100 primeiros produtos da tela inicial através do método GET.
+- Em relação ao uso do Puppeteer, notei que o processo de raspagem estava levando considerável tempo. Isso pode ter sido devido à minha inexperiência com a biblioteca ou às suas próprias limitações. Diante do tempo necessário para a raspagem, decidi restringir a fonte de dados para garantir uma experiência mais rápida. Portanto, a aplicação foi projetada para raspar apenas os 100 primeiros produtos da tela inicial, utilizando o método GET.
+
+- Ao comparar o conteúdo visualizado manualmente com o apresentado pelo navegador Puppeteer, notei que as informações frequentemente apresentavam divergências. No entanto, observei que ao acessar o site pelo navegador em modo anônimo, obtive resultados semelhantes aos obtidos pelo Puppeteer. Entretanto, este aspecto ainda está em fase de análise para uma correção mais precisa.
