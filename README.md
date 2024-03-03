@@ -1,5 +1,5 @@
 # Bem vindo ao Projeto Open_Food
-Esta API fornece uma maneira simples de obter dados do site OpenFood usando Puppeteer. O website [OpenFood](https://br.openfoodfacts.org/) é um website abrangente de produtos alimentícios, fornecendo informações detalhadas sobre ingredientes, valores nutricionais e muito mais.
+Esta API fornece uma maneira simples de obter dados do site OpenFood usando Puppeteer. O website [OpenFoodFacts](https://br.openfoodfacts.org/) é um website abrangente de produtos alimentícios, fornecendo informações detalhadas sobre ingredientes, valores nutricionais e muito mais.
 
 ## Contexto
 O __Open_Food__ é uma ferramenta que acessa a bases de dados, é permite aos usuários:
@@ -46,9 +46,28 @@ $ npm run start:dev
 - O endpoint __GET__ espera receber como segundo parâmetro de busca, um número que pode variar de 1 a 5.
 - O O endpoint __GET:id__ espera receber um ID vinculado aos primeiros 20 produtos na página inicial.
 
+## Tempo de resposta
+- Para o endpoint __GET__, o tempo médio de resposta foi de aproximadamente 54 segundos para coletar os 20 primeiros registros. Esse tempo inclui o processo de coleta dos links e a interação com cada um deles para coletar os dados.
+- Para o endpoint __GET:id__, o tempo médio de resposta foi de aproximadamente 10,7 segundos. Esse tempo engloba o processo de coleta dos 20 primeiros links da página, a filtragem dos links com base no ID fornecido e a busca dos dados associados ao ID do produto.
 ## Desafios
 - A raspagem de dados no website OpenFood tornou-se uma tarefa desafiadora para mim. A falta de uniformidade na estrutura, layout e práticas de codificação desses sites complicou significativamente o processo de extração de dados. Uma das dificuldades que enfrento é lidar com a estrutura variável das páginas de cada produto, uma vez que estas apresentam diferentes formatos de HTML.
+
+- A coleta de dados das informações da tabela nutricional foi desafiadora, pois cada produto tem sua composição específica. Por exemplo, pode haver dois produtos de chocolate, sendo que um contém açúcar e o outro não. Essa variação gerou uma instabilidade nas informações. Para contornar esse problema, foi necessário coletar todos os dados da tabela, garantindo abrangência e consistência.
 
 - Em relação ao uso do Puppeteer, notei que o processo de raspagem estava levando considerável tempo. Isso pode ter sido devido à minha inexperiência com a biblioteca ou às suas próprias limitações. Diante do tempo necessário para a raspagem, decidi restringir a fonte de dados para garantir uma experiência mais rápida. Portanto, a aplicação foi projetada para raspar apenas os 100 primeiros produtos da tela inicial, utilizando o método GET.
 
 - Ao comparar o conteúdo visualizado manualmente com o apresentado pelo navegador Puppeteer, notei que as informações frequentemente apresentavam divergências. No entanto, observei que ao acessar o site pelo navegador em modo anônimo, obtive resultados semelhantes aos obtidos pelo Puppeteer. Entretanto, este aspecto ainda está em fase de análise para uma correção mais precisa.
+
+## Documentação
+- A aplicação inclui a utilização de documentação interna através do Swagger. Essa ferramenta proporcionou uma compreensão intuitiva das funcionalidades da aplicação. O acesso à documentação está disponível no endpoint 'http://localhost:3001/api'.
+<img src='https://drive.google.com/uc?id=1z-aA6fxmELCIWby7CM48QnsmCAMG32zJ' alt='imagem_swagger'/>
+
+## Referências
+- Swagger: https://docs.nestjs.com/openapi/introduction
+- Puppeteer: https://pptr.dev/
+- Paulo Salvatore: https://www.youtube.com/watch?v=fshX_252HbU
+- Bruno Castro: https://www.youtube.com/watch?v=SkvTMxP5WUQ
+- Get_it Done!: https://www.youtube.com/watch?v=A2aHLWNpF18&t=23s
+- OpenAPI: https://chat.openai.com/
+- Gemini: https://gemini.google.com/app
+
