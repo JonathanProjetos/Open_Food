@@ -4,7 +4,6 @@ Esta API fornece uma maneira simples de obter dados do site OpenFood usando Pupp
 
 ## Sumário
 - [Tecnologias e Ferramentas Utilizadas](#tecnologias-e-ferramentas-utilizadas)
-- [Instalação](#instalação)
 - [Executando a aplicação](#executando-a-aplicação)
 - [Comportamento](#comportamento)
 - [Parâmetros](#parâmetros)
