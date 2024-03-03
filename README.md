@@ -44,3 +44,7 @@ $ npm run start:dev
 ## Parâmetros
 - O endpoint __GET__ espera receber, no primeiro parâmetro de busca, uma letra podendo variar entre A, B, C, D ou E.
 - O endpoint __GET__ espera receber como segundo parâmetro de busca, um número que pode variar de 1 a 5.
+- O O endpoint __GET:id__ espera receber um ID vinculado aos primeiros 20 produtos na página inicial.
+
+## Desafios
+-  Raspar dados de websites não consistentes pode ser uma tarefa bastante desafiadora para mim. A falta de uniformidade na estrutura, layout e práticas de codificação desses sites pode complicar muito o processo de extração de dados. Uma das dificuldades que enfrento é lidar com a estrutura variável dos sites, já que as páginas podem ter diferentes estruturas HTML. 
