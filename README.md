@@ -54,8 +54,8 @@ $ npm run start:dev
 - O endpoint __GET:id__ espera receber um parâmetro para a busca dos produtos, o qual precisa ser os id dos primeiros 20 produtos do website Openfood.
 
 ## Parâmetros
-- O endpoint __GET__ espera receber, no primeiro parâmetro de busca, uma letra podendo variar entre A, B, C, D ou E.
-- O endpoint __GET__ espera receber como segundo parâmetro de busca, um número que pode variar de 1 a 5.
+- O endpoint __GET__ deve ter como primeiro parâmetro de busca, uma letra podendo variar entre A, B, C, D ou E.
+- O endpoint __GET__ deve ter, como segundo parâmetro de busca, um número que pode variar de 1 a 5.
 - O O endpoint __GET:id__ espera receber um ID vinculado aos primeiros 20 produtos na página inicial.
 
 ## Tempo de resposta
