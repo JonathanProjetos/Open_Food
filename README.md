@@ -63,7 +63,28 @@ $ npm run start:dev
 - Para o endpoint __GET:id__, o tempo médio de resposta foi de aproximadamente 10,7 segundos. Esse tempo engloba o processo de coleta dos 20 primeiros links da página, a filtragem dos links com base no ID fornecido e a busca dos dados associados ao ID do produto.
 
 ## Formato de Resposta
-- GET: products/
+- GET: products/nutrition=D&nova=4
+```
+  [
+    {
+      "id": string,
+      "name": string,
+      "nutrition": {
+        "score": "D",
+        "title": "string"
+      },
+      "nova": {
+        "score": 4,
+        "title": string
+      }
+    },
+
+    //..............
+  ]
+
+```
+
+- GET: products/:id
 ```
   {
     "title": string,
