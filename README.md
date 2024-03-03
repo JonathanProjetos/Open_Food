@@ -64,7 +64,7 @@ $ npm run start:dev
 
 ## Formato de Resposta
 - GET: products/
-bash```
+```
   {
     "title": string,
     "quantity": string,
@@ -94,7 +94,7 @@ bash```
   
   }
 
-    ```
+```
 ## Desafios
 - A raspagem de dados no website OpenFood tornou-se uma tarefa desafiadora para mim. A falta de uniformidade na estrutura, layout e práticas de codificação desses sites complicou significativamente o processo de extração de dados. Uma das dificuldades que enfrento é lidar com a estrutura variável das páginas de cada produto, uma vez que estas apresentam diferentes formatos de HTML.
 
