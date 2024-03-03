@@ -62,6 +62,11 @@ $ npm run start:dev
 - A aplicação inclui a utilização de documentação interna através do Swagger. Essa ferramenta proporcionou uma compreensão intuitiva das funcionalidades da aplicação. O acesso à documentação está disponível no endpoint 'http://localhost:3001/api'.
 <img src='https://drive.google.com/uc?id=1z-aA6fxmELCIWby7CM48QnsmCAMG32zJ' alt='imagem_swagger'/>
 
+## Conclusão
+A aplicação atendeu às funcionalidades propostas no README do teste técnico, proporcionando uma experiência emocionante e desafiadora no uso das tecnologias envolvidas. O contato com algumas delas pela primeira vez ampliou meu conhecimento e habilidades. Durante o desenvolvimento, o pensamento analítico foi essencial para estruturar os dados considerando possíveis contextos futuros.
+
+Embora a aplicação ainda não esteja perfeita, decidi entregá-la neste ponto de evolução devido ao tempo já consumido. Comprometo-me a continuar aperfeiçoando-a no futuro, incorporando tratamentos de erro para situações como a ausência de dados na página de coleta. Essas melhorias serão essenciais para garantir a robustez e confiabilidade da aplicação.
+
 ## Referências
 - Swagger: https://docs.nestjs.com/openapi/introduction
 - Puppeteer: https://pptr.dev/
