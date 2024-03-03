@@ -70,11 +70,11 @@ $ npm run start:dev
       "id": string,
       "name": string,
       "nutrition": {
-        "score": "D",
+        "score": string,
         "title": "string"
       },
       "nova": {
-        "score": 4,
+        "score": number,
         "title": string
       }
     },
