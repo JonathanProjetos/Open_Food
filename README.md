@@ -90,9 +90,6 @@ $ npm run start:dev
         "title": string
       }
   }
-  
-  
-  }
 
 ```
 ## Desafios
