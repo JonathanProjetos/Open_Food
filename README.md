@@ -1,5 +1,18 @@
 # Bem vindo ao Projeto Open_Food
 Esta API fornece uma maneira simples de obter dados do site OpenFood usando Puppeteer. O website [OpenFoodFacts](https://br.openfoodfacts.org/) é um website abrangente de produtos alimentícios, fornecendo informações detalhadas sobre ingredientes, valores nutricionais e muito mais.
+<datails>
+
+## Sumário
+- [Tecnologias e Ferramentas Utilizadas](#tecnologias-e-ferramentas-utilizadas)
+- [Instalação](#instalação)
+- [Executando a aplicação](#executando-a-aplicação)
+- [Comportamento](#comportamento)
+- [Parâmetros](#parâmetros)
+- [Documentação](#documentação)
+- [Desafios](#desafios)
+- [Conclusão](#conclusão)
+- [Referências](#referências)
+
 
 ## Contexto
 O __Open_Food__ é uma ferramenta que acessa a bases de dados, é permite aos usuários:
