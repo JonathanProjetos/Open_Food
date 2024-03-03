@@ -47,4 +47,6 @@ $ npm run start:dev
 - O O endpoint __GET:id__ espera receber um ID vinculado aos primeiros 20 produtos na página inicial.
 
 ## Desafios
--  Raspar dados de websites não consistentes pode ser uma tarefa bastante desafiadora para mim. A falta de uniformidade na estrutura, layout e práticas de codificação desses sites pode complicar muito o processo de extração de dados. Uma das dificuldades que enfrento é lidar com a estrutura variável dos sites, já que as páginas podem ter diferentes estruturas HTML. 
+- A raspagem de dados no website OpenFood tornou-se bastante desafiadora para mim. A falta de uniformidade na estrutura, layout e práticas de codificação desses sites complicou muito o processo de extração de dados. Uma das dificuldades que enfrentei é lidar com a estrutura variável dos sites de cada produto, já que as páginas têm diferentes estruturas HTML. 
+
+- Percebi que o Puppeteer estava levando bastante tempo para o processo de raspagem. Seja pela falta de experiência usando a biblioteca ou pela limitação dela, o tempo levado pelo processo de raspagem me fez limitar a fonte de dados para ter uma experiência mais rápida. A aplicação foi desenvolvida para raspar os 100 primeiros produtos da tela inicial através do método GET.
