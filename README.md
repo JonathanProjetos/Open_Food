@@ -61,6 +61,40 @@ $ npm run start:dev
 ## Tempo de resposta
 - Para o endpoint __GET__, o tempo médio de resposta foi de aproximadamente 54 segundos para coletar os 20 primeiros registros. Esse tempo inclui o processo de coleta dos links e a interação com cada um deles para coletar os dados.
 - Para o endpoint __GET:id__, o tempo médio de resposta foi de aproximadamente 10,7 segundos. Esse tempo engloba o processo de coleta dos 20 primeiros links da página, a filtragem dos links com base no ID fornecido e a busca dos dados associados ao ID do produto.
+
+## Formato de Resposta
+- GET: products/
+bash```
+  {
+    "title": string,
+    "quantity": string,
+    "ingredients": {
+      "hasPalmOil: string,
+      "isVegan": boolean,
+      "isVegetarian": boolean,
+      "list": array
+    },
+    "nutrition": {
+      "score": string
+      "values": [][],
+      "servingSize": string,
+      "data": {
+        "Energia": {
+          "per100g": string
+          "perServing": string  
+        }
+        //.............
+      }
+      "nova": {
+        "score": number
+        "title": string
+      }
+  }
+  
+  
+  }
+
+    ```
 ## Desafios
 - A raspagem de dados no website OpenFood tornou-se uma tarefa desafiadora para mim. A falta de uniformidade na estrutura, layout e práticas de codificação desses sites complicou significativamente o processo de extração de dados. Uma das dificuldades que enfrento é lidar com a estrutura variável das páginas de cada produto, uma vez que estas apresentam diferentes formatos de HTML.
 
