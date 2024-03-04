@@ -36,7 +36,7 @@ export class ProductsService {
 
       // ------- Pegando o id do produto -------
 
-      const id = query.fieldId(link);
+      const id = await query.fieldId(page);
 
       // ------- Pegando o título do produto -------
 
