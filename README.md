@@ -50,8 +50,8 @@ $ npm run start:dev
 ```
 ## Comportamento
 
-- O endpoint __GET__ espera receber dois parâmetros para fazer a filtragem dos dados. Caso não tenham sido fornecidos os parâmetros, ou estejam faltando parâmetros, o endpoint trará os 20 primeiros produtos da tela inicial do website OpenFood.
-- O endpoint __GET:id__ espera receber um parâmetro para a busca dos produtos, o qual precisa ser os id dos primeiros 20 produtos do website Openfood.
+- O endpoint __GET__ espera receber dois parâmetros para fazer a filtragem dos dados. Caso não tenham sido fornecidos os parâmetros, ou estejam faltando parâmetros, o endpoint trará os 20 primeiros produtos da tela inicial do website OpenFoodFacts.
+- O endpoint __GET:id__ espera receber um parâmetro para a busca dos produtos, o qual precisa ser os id dos primeiros 20 produtos do website OpenFoodFacts.
 
 ## Parâmetros
 ```
