@@ -5,6 +5,7 @@ export const fieldIngredientsAndListIngredients = async (
   page: Page,
   id: string,
 ) => {
+  console.log('ingredientes', id);
   try {
     // ------- Busco pelo elemento antes de executar -------
     const element = page.$(
@@ -30,8 +31,14 @@ export const fieldIngredientsAndListIngredients = async (
       // ------- Pegando a lista de ingredientes -------
 
       const ingredientsList = await page?.$eval('.panel_text', (el) =>
-        el?.textContent.replace(/\s+|\n+/g, ' ').split(','),
+        el?.textContent
+          .replace(/\s+|\n+|\.|\:/g, ' ')
+          .toLocaleLowerCase()
+          .split(',')
+          .map((i) => i.trim()),
       );
+
+      console.log(ingredientsList);
 
       // -------- Criando o objeto de ingredientes -------
 
