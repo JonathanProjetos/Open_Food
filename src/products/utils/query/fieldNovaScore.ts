@@ -14,7 +14,7 @@ export const fieldNovaScore = async (page: Page, id: string) => {
         (el) => el?.innerHTML.trim(),
       );
       const formatedNovaScore = novaScore?.split(' ')[1];
-      return formatedNovaScore;
+      return Number(formatedNovaScore);
     }
     // Se não encontrar o elemento e não gerar o error retorno um valor default '?'
     return '?';
