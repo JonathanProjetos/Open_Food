@@ -120,7 +120,7 @@ $ npm run start:dev
 
 - A coleta de dados das informações da tabela nutricional foi desafiadora, pois cada produto tem sua composição específica. Por exemplo, pode haver dois produtos de chocolate, sendo que um contém açúcar e o outro não. Essa variação gerou uma instabilidade nas informações. Para contornar esse problema, foi necessário coletar todos os dados da tabela, garantindo abrangência e consistência.
 
-- Em relação ao uso do Puppeteer, notei que o processo de raspagem estava levando considerável tempo. Isso pode ter sido devido à minha inexperiência com a biblioteca ou às suas próprias limitações. Diante do tempo necessário para a raspagem, decidi restringir a fonte de dados para garantir uma experiência mais rápida. Portanto, a aplicação foi projetada para raspar apenas os 100 primeiros produtos da tela inicial sendo limitado aos 20 primeiros proodutos intencionalmente.
+- Em relação ao uso do Puppeteer, notei que o processo de raspagem estava levando considerável tempo. Isso pode ter sido devido à minha inexperiência com a biblioteca ou às suas próprias limitações. Diante do tempo necessário para a raspagem, decidi restringir a fonte de dados para garantir uma experiência mais rápida. Portanto, a aplicação foi projetada para raspar apenas os 100 primeiros produtos da tela inicial sendo limitado aos 20 primeiros produtos intencionalmente.
 
 - Ao comparar o conteúdo visualizado manualmente com o apresentado pelo navegador Puppeteer, notei que as informações frequentemente apresentavam divergências. No entanto, observei que ao acessar o site pelo navegador em modo anônimo, obtive resultados semelhantes aos obtidos pelo Puppeteer. Entretanto, este aspecto ainda está em fase de análise para uma correção mais precisa.
 
