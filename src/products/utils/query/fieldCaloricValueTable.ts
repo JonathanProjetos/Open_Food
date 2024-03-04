@@ -3,13 +3,13 @@ import { Page } from 'puppeteer';
 // Busco as informações na tabela de valores calóricos
 
 /* 
-  Primeiro busco por todas as informações da tabela de valores calóricos. O formato retornado e como no exempo abaixo:
+  Primeiro, busco por todas as informações da tabela de valores calóricos. O formato retornado é como no exemplo abaixo:
   [
     'Energia',
     '2.230 kj(535 kcal)',
     '446 kj(107 kcal)',
     '+119%',
-    .......
+    ....... outros valores
   ]
   
   Após a obtenção dos valores, crio um objeto para armazenar os valores de cada coluna.
@@ -39,7 +39,7 @@ export const fieldCaloricValueTable = async (page: Page, id: string) => {
       }
       return data;
     }
-    // Se não encontrar o elemento e não gerar o error retorno um valor default {}
+    // Se não encontrar o elemento e não gerar o error. Retorno um valor default {}.
     return {};
   } catch (error) {
     console.error(error);
