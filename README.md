@@ -120,7 +120,7 @@ $ npm run start:dev
 
 - A coleta de dados das informações da tabela nutricional foi desafiadora, pois cada produto tem sua composição específica. Por exemplo, pode haver dois produtos de chocolate, sendo que um contém açúcar e o outro não. Essa variação gerou uma instabilidade nas informações. Para contornar esse problema, foi necessário coletar todos os dados da tabela, garantindo abrangência e consistência.
 
-- Em relação ao uso do Puppeteer, notei que o processo de raspagem estava levando considerável tempo. Isso pode ter sido devido à minha inexperiência com a biblioteca ou às suas próprias limitações. Diante do tempo necessário para a raspagem, decidi restringir a fonte de dados para garantir uma experiência mais rápida. Portanto, a aplicação foi projetada para raspar apenas os 100 primeiros produtos da tela inicial sendo limitado aos 20 primeiros proodutos intencionalmente.
+- Em relação ao uso do Puppeteer, notei que o processo de raspagem estava levando considerável tempo. Isso pode ter sido devido à minha inexperiência com a biblioteca ou às suas próprias limitações. Diante do tempo necessário para a raspagem, decidi restringir a fonte de dados para garantir uma experiência mais rápida. Portanto, a aplicação foi projetada para raspar apenas os 100 primeiros produtos da tela inicial sendo limitado aos 20 primeiros produtos intencionalmente.
 
 - Ao comparar o conteúdo visualizado manualmente com o apresentado pelo navegador Puppeteer, notei que as informações frequentemente apresentavam divergências. No entanto, observei que ao acessar o site pelo navegador em modo anônimo, obtive resultados semelhantes aos obtidos pelo Puppeteer. Entretanto, este aspecto ainda está em fase de análise para uma correção mais precisa.
 
@@ -131,7 +131,10 @@ $ npm run start:dev
 ## Conclusão
 A aplicação atendeu às funcionalidades propostas do [teste técnico](https://hiroyamaguch.notion.site/Vaga-para-Desenvolvedor-J-nior-5aca5eae148247848e91589e61f029e1), proporcionando uma experiência emocionante e desafiadora no uso das tecnologias envolvidas. O contato com algumas delas pela primeira vez ampliou meu conhecimento e habilidades. Durante o desenvolvimento, o pensamento analítico foi essencial para estruturar os dados considerando possíveis contextos futuros.
 
-Embora a aplicação ainda não esteja perfeita e precise melhorar em diversos pontos, decidi entregá-la neste ponto de evolução devido ao tempo já consumido. Comprometo-me a continuar aperfeiçoando-a deste ponto em diante, incorporando tratamentos de erro para situações como a ausência de dados na página de coleta. Essas melhorias serão essenciais para garantir a robustez e confiabilidade da aplicação.
+Embora a aplicação ainda não esteja perfeita e precise melhorar em diversos pontos, decidi entregá-la neste ponto de evolução devido ao tempo já consumido. Comprometo-me a continuar aperfeiçoando-a deste ponto em diante.
+
+## Git, GitHub e Histórico de Commits
+Este projeto utilizou a [Especificação de Commits Convencionais](https://www.conventionalcommits.org/en/v1.0.0/), com alguns tipos da [convenção Angular](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines). Além disso, foi utilizado o pacote [conventional-commit-cli](https://www.npmjs.com/package/conventional-commit-cli) para ajudar a seguir a convenção de commits. É importante utilizar a convenção de commits em projetos para manter o histórico de commits organizado e facilitar a leitura e o entendimento do que foi desenvolvido.
 
 ## Referências
 - Swagger: https://docs.nestjs.com/openapi/introduction
