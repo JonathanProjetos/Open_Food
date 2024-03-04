@@ -131,7 +131,7 @@ $ npm run start:dev
 ## Conclusão
 A aplicação atendeu às funcionalidades propostas do [teste técnico](https://hiroyamaguch.notion.site/Vaga-para-Desenvolvedor-J-nior-5aca5eae148247848e91589e61f029e1), proporcionando uma experiência emocionante e desafiadora no uso das tecnologias envolvidas. O contato com algumas delas pela primeira vez ampliou meu conhecimento e habilidades. Durante o desenvolvimento, o pensamento analítico foi essencial para estruturar os dados considerando possíveis contextos futuros.
 
-Embora a aplicação ainda não esteja perfeita e precise melhorar em diversos pontos, decidi entregá-la neste ponto de evolução devido ao tempo já consumido. Comprometo-me a continuar aperfeiçoando-a deste ponto em diante, incorporando tratamentos de erro para situações como a ausência de dados na página de coleta. Essas melhorias serão essenciais para garantir a robustez e confiabilidade da aplicação.
+Embora a aplicação ainda não esteja perfeita e precise melhorar em diversos pontos, decidi entregá-la neste ponto de evolução devido ao tempo já consumido. Comprometo-me a continuar aperfeiçoando-a deste ponto em diante.
 
 ## Git, GitHub e Histórico de Commits
 Este projeto utilizou a [Especificação de Commits Convencionais](https://www.conventionalcommits.org/en/v1.0.0/), com alguns tipos da [convenção Angular](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines). Além disso, foi utilizado o pacote [conventional-commit-cli](https://www.npmjs.com/package/conventional-commit-cli) para ajudar a seguir a convenção de commits. É importante utilizar a convenção de commits em projetos para manter o histórico de commits organizado e facilitar a leitura e o entendimento do que foi desenvolvido.
