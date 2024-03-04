@@ -109,7 +109,7 @@ export class ProductsService {
   async getProductById(id: any): Promise<ProductDetail> {
     // ------- Iniciando o browser -------
     const browser = await puppeteer.launch({
-      headless: false,
+      headless: true,
       args: ['--lang=pt-BR'],
     });
 
