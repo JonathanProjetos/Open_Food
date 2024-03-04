@@ -134,7 +134,7 @@ A aplicação atendeu às funcionalidades propostas do [teste técnico](https://
 Embora a aplicação ainda não esteja perfeita e precise melhorar em diversos pontos, decidi entregá-la neste ponto de evolução devido ao tempo já consumido. Comprometo-me a continuar aperfeiçoando-a deste ponto em diante, incorporando tratamentos de erro para situações como a ausência de dados na página de coleta. Essas melhorias serão essenciais para garantir a robustez e confiabilidade da aplicação.
 
 ## Git, GitHub e Histórico de Commits
-Este projeto utilizou a Especificação de Commits Convencionais, com alguns tipos da convenção Angular. Além disso, foi utilizado o pacote conventional-commit-cli para ajudar a seguir a convenção de commits. É importante utilizar a convenção de commits em projetos para manter o histórico de commits organizado e facilitar a leitura e o entendimento do que foi desenvolvido.
+Este projeto utilizou a [Especificação de Commits Convencionais](https://www.conventionalcommits.org/en/v1.0.0/), com alguns tipos da [convenção Angular](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines). Além disso, foi utilizado o pacote [conventional-commit-cli](https://www.npmjs.com/package/conventional-commit-cli) para ajudar a seguir a convenção de commits. É importante utilizar a convenção de commits em projetos para manter o histórico de commits organizado e facilitar a leitura e o entendimento do que foi desenvolvido.
 
 ## Referências
 - Swagger: https://docs.nestjs.com/openapi/introduction
