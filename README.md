@@ -54,10 +54,6 @@ $ npm run start:dev
 - O endpoint __GET:id__ espera receber um parâmetro para a busca dos produtos, o qual precisa ser os id dos primeiros 20 produtos do website OpenFoodFacts.
 
 ## Parâmetros
-```
-  __Get__: http://localhost:3001/products?nutrition=D&nova=4
-  __Get:id__: http://localhost:3001/products/7898024394181
-```
 - O endpoint __GET__ deve ter como primeiro parâmetro de busca, uma letra podendo variar entre A, B, C, D ou E.
 - O endpoint __GET__ deve ter como segundo parâmetro de busca, um número que pode variar de 1 a 5.
 - O O endpoint __GET:id__ espera receber um ID vinculado aos primeiros 20 produtos na página inicial.
@@ -83,7 +79,7 @@ $ npm run start:dev
       }
     },
 
-    //..............
+    //.............. outros valores
   ]
 
 ```
