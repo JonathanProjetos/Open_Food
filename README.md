@@ -22,7 +22,7 @@ O __Open_Food__ é uma ferramenta que acessa a bases de dados, é permite aos us
 
 Este projeto utiliza as seguintes tecnologias e ferramentas:
 
-- [Node.js](https://nodejs.org/docs/latest/api/) | ODM Object-documente-Mapper para MongoDB
+- [Node.js](https://nodejs.org/docs/latest/api/) | Plataforma de execução runtime baseda em javascript
 - [NestJS](https://docs.nestjs.com/) | Framework para a construção de aplicativos Node.js.
 - [Nestjs/Swagger](https://docs.nestjs.com/openapi/introduction) | Ferramenta para criação de interface de documentação.
 - [Puppeteer](https://pptr.dev/) | O Puppeteer é uma biblioteca Node.js que permite controlar o Chrome ou o Chromium
